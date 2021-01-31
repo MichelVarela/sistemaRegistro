@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<%- include('partials/head') %> 
+<body>
+
+    <main class="container my-3">
+        <h2 class="mb-4">Login</h2>
+        <form action="/login" method="POST"><!-- recordar poner enctype -->
+            <div class="mb-3">
+                <input type="email" class="form-control" name="email" placeholder="Email">
+            </div>
+            <div class="mb-3">
+                <input type="password" class="form-control" name="pass" placeholder="Contraseña">
+            </div>
+            <button type="submit" class="btn btn-primary">Ingresar</button>
+            <div class="col-12 col-md-8">
+                <% if (typeof error != 'undefined') { %><!-- si el tipo de dato 'error' es distinto de 'undefined' -->
+                    <div class="alert alert-danger mt-5">
+                        <span><%= error %> </span>
+                    </div>
+                <% } %>
+            </div>
+        </form>
+    </main>
+    
+    
+    
+    <%- include('partials/scripts') %> 
+</body>
+</html>

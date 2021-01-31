@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include('partials/head') %> 
+<body>
+    
+    <main class="container my-3">
+        <ul class="list-group">
+            <li class="list-group-item">Datos user</li>
+            <li class="list-group-item"><img src="/images/<%= user.avatar %>" alt="avatar" class="avatar"></li><!-- recordar la carpeta public no es necesario declararla en la ruta -->
+            <li class="list-group-item"><%= user.nombre  %> </li>
+            <li class="list-group-item"><%= user.email %> </li>
+          </ul>
+          <a href="/" class="btn btn-primary my-3">Volver</a>
+    </main>
+
+
+    <%- include('partials/scripts') %> 
+</body>
+</html>

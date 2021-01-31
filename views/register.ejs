@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<%- include('partials/head') %> 
+<body>
+
+    <main class="container my-3">
+        <h2 class="mb-4">Registro</h2>
+        <form action="/register" method="POST" enctype="multipart/form-data"><!-- recordar poner enctype -->
+            <div class="mb-3">
+                <input type="text" class="form-control" name="nombre" placeholder="Nombre">
+            </div>
+            <div class="mb-3">
+                <input type="text" class="form-control" name="apellido" placeholder="Apellido">
+            </div>
+            <div class="mb-3">
+                <input type="email" class="form-control" name="email" placeholder="Email">
+            </div>
+            <div class="mb-3">
+                <input type="password" class="form-control" name="passUno" placeholder="Contraseña">
+            </div>
+            <div class="mb-3">
+                <input type="password" class="form-control" name="passDos" placeholder="Repetir contraseña">
+            </div>
+            <div class="mb-3">
+                <input type="file" class="form-control" name="avatar">
+            </div>
+            <button type="submit" class="btn btn-primary">Registrarme</button>
+        </form>
+        <% if (typeof error != 'undefined') { %><!-- si el tipo de dato 'error' es distinto de 'undefined' -->
+            <div class="alert alert-danger mt-5">
+                <span><%= error %> </span>
+            </div>
+        <% } %>
+    </main>
+    
+    
+    
+    <%- include('partials/scripts') %> 
+</body>
+</html>

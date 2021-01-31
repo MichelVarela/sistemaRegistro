@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "nombre": "Michel",
+    "apellido": "Varela",
+    "email": "michelvarela.95@outlook.com",
+    "passUno": "$2b$12$r3aUbrfHszZGQrV2yXt6GOSn3TETssKJC/wrJYU.FFws4ECedpdrW",
+    "passDos": "$2b$12$u0ZKgp2gDn7KnIy9R3Cxbu5FZcT9lL./flykYEamc2/1ZOGfcbFZ2",
+    "avatar": "avatar-1612106528098.jpg"
+  },
+  {
+    "id": 2,
+    "nombre": "Carla",
+    "apellido": "Fernandez",
+    "email": "ahsdhsald@ahsdjkjahd.com",
+    "passUno": "$2b$12$aUiD3hou8LfpupgMQiLThuKqxi9KKhV8VrnkKMS.3Lr5NylQA2/Zu",
+    "passDos": "$2b$12$ZtoFNumLWil1lvBt.tB7POdAHtPvB9vjmXVMV7oML/HwHLi4vS6YS",
+    "avatar": "avatar-1612107611497.jpg"
+  }
+]
